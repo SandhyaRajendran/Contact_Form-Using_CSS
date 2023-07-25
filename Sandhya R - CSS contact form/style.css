@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+.conatiner {
+    max-width: 1000px;
+    background-color: lightblue;
+    margin: 50px auto;
+}
+.conatiner .links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img{
+    height: 45px;
+    width: 45px;
+    margin:0px 10px;
+    filter: hue-rotate(221deg);
+}
+.contact-links{
+    background-color: #1f2e43;
+    min-height: 500px;
+    width: 50%;
+    text-align: center;
+}
+h2{
+    font-size: 60px;
+    color: white;
+    font-family:sans-serif;
+    /* font-weight: 500; */
+    padding-top: 80px;
+}
+
+.contact-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-form-wrapper{
+    min-height: 500px;
+    width: 50%;
+    background-color: #bed3e5;
+}
+.contact-form-wrapper>form{
+    text-align: center;
+    margin: 150px auto;
+}
+input[type="text"]{
+    border: 0px;
+    border-radius: 2px;
+    padding: 10px 60px;
+    width: 50%;
+    margin: 10px 0px;
+}
+textarea{
+    border: 0px;
+    border-radius: 2px;
+    padding: 10px 60px;
+    width: 50%;
+    margin: 10px 0px;
+}
+.submit-btn{
+    background-color:#1f2e43 ;
+    /* height: 46px; */
+    /* width: 100px; */
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+}
+.contact-form-wrapper .form-item{
+    position: relative;
+}
+.contact-form-wrapper .form-item label {
+    position: absolute;
+    left: 15%;
+    top: 15px;
+    color: black;
+}
+.contact-form-wrapper .form-item input:focus+label,
+.contact-form-wrapper .form-item textarea:focus+label
+
+{
+    position: absolute;
+    top:-10px;
+    left: 15%;
+}
+@media(max-width:616px){
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .contact-links{
+        background-color: #1f2e43;
+        min-height: 500px;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form-wrapper{
+        min-height: 500px;
+        width: 100%;
+        background-color: #bed3e5;
+    }
+}
